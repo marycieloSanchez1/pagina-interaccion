@@ -1,9 +1,11 @@
 /*Navbar*/
+
 .titulo {
     font-size: 50px !important;
     font-family: "Leckerli one";
     margin-top: 10px;
-
+    background: #fff;
+    z-index: 10;
 }
 
 .opciones a {
@@ -13,21 +15,101 @@
     margin: 10px 30px 10px 30px;
     position: relative;
     z-index: 0;
+    background: #fff;
+    z-index: 10;
 }
 
 .navbar-nav a:hover {
     color: rgb(236, 164, 229) !important;
 }
 
-.bucador {
-    margin: 100px !important;
 
+/*barra de busqueda*/
+#ctn-icon-search{
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#ctn-icon-search i{
+    font-size: 18px;
+    color: #777777;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#ctn-icon-search i:hover{
+    color: #46a2fd;
+}
+
+#ctn-bars-search{
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    z-index: 9;
+    transition: all 600ms;
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+}
+
+#box-search{
+    position: fixed;
+    top: 315px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    background: #fff;
+    z-index: 8;
+    overflow: hidden;
+    display:none; /*le quita el subrayado*/
+    list-style-type:none; /* le quita los puntos*/
+}
+
+#box-search li a{
+    display: block;
+    width: 1200px;
+    color: #777777;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+#box-search li a:hover{
+    background: #f3f3f3;
+}
+
+#box-search li a i{
+    margin-right: 10px;
+    color: #777777;
+}
+
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 7;
+    display: none;
+}
+
 
 .carrito {
     font-size: 30px;
     margin: 10px 40px 10px 40px;
     cursor: pointer;
+    z-index: 10;
 }
 
 .nav i:hover {
@@ -39,14 +121,16 @@
     z-index: 1;
     margin-top: -100px;
     margin-left: -590px !important;
+    z-index: 11;
 }
 
 .icono1 img {
     position: absolute;
     z-index: 1;
     /*se asegura de que la imagen este encima de cualquier cosa*/
-    margin-top: 200px;
-    margin-left: -410px;
+    margin-top: 160px;
+    margin-left: -425px;
+    z-index: 11;
 }
 
 .icono2 img {
@@ -54,6 +138,7 @@
     z-index: 1;
     margin-top: 40px;
     margin-left: 310px;
+    z-index: 11;
 }
 
 .galleta2 img {
@@ -62,6 +147,7 @@
     z-index: 1;
     margin-top: 0;
     margin-left: 400px !important;
+    z-index: 11;
 }
 
 .linea1 img {

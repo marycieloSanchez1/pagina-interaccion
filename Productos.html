@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T'iksicookies / Nosotros</title>
+    <title>T'iksicookies / Productos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!--Link del estilo-->
@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <!--favecon-->
+         <link rel="icon" type="image/x-icon" href="img/galleta_icono.png" style="height: 100%; width: 100%;">
         
 </head>
 
@@ -68,7 +70,7 @@
 
 
         <!-- As a heading -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white" style="z-index: 10; height: 110px;">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -82,18 +84,36 @@
                         <a class="nav-link" href="Ofertas.html">Ofertas</a>
                         <a class="nav-link" href="Nosotros.html">Nosotros</a>
                     </div>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">
-                            Search
-                        </button>
-                    </form>
+                    <i class="fa-solid fa-magnifying-glass"
+                    style="margin-left: 250px; font-size: 30px;cursor: pointer; z-index: 10;" id="icon-search"></i>
+                <!-- Icono de carrito -->
                     <i class="fa-solid fa-cart-shopping carrito" href="#"></i>
                 </div>
             </div>
         </nav>
     </div>
     <!--fin del navbar-->
+     <!-- inicio del buscador-->
+     <div id="ctn-bars-search" style="top: 135px !important;">
+        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+    </div>
+    <ul id="box-search" >
+        <!--directo a la info de galletas-->
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Zanahoria Zen con Nuez</a></li>
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Chía Crunchy</a></li>
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Galletas Almendra Linaza Bliss</a></li>
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Avenita Crunch</a></li>
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Galletas Doradas de Cúrcuma</a></li>
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Avena Crunchy Cookies</a></li>
+        <!--directo a las ofertas de galletas-->
+        <li><a href="detalle_oferta1.html"><i class="fa-solid fa-magnifying-glass"></i>Combo Dúo Nutritivo</a></li>
+        <li><a href="detalle_oferta2.html"><i class="fa-solid fa-magnifying-glass"></i>Combo Energético Premium</a></li>
+        <li><a href="detalle_oferta3.html"><i class="fa-solid fa-magnifying-glass"></i>Combo Saludable</a></li>
+        <li><a href="detalle_oferta4.html"><i class="fa-solid fa-magnifying-glass"></i>Pack Saludable Todo en Uno</a></li>
+        <li><a href="detalle_oferta5.html"><i class="fa-solid fa-magnifying-glass"></i>Paquete Energético Supremo</a></li>
+    </ul>
+    <div id="cover-ctn-search"></div>
+    <!-- fin del buscador-->
      <!-- inicio nube 1-->
      <div class="container-fluid ">
         <div class="row nube3 justify-content-center">
@@ -147,14 +167,38 @@
                 </div>
             </div>
             <!-- Product Card 4-->
-            
-            <!-- Product Card 5 -->
             <div class="col-md-4" style="margin-top: 4%;">
                 <div class="card">
-                    <img src="img/Galletas-avena.jpg" class="card-img-top" alt="galleta_avena">
+                    <img src="img/galleta_avena-2.jpg" class="card-img-top" alt="galleta_avena">
                     <div class="card-body ofertas text-center">
                         <h5 class="product-title">Avenita Crunch</h5>
                         <p class="card-text">S/ 20.00 - S/ 22.00</p>
+                       
+                        <a href="#" class="btn btn-products">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 5-->
+            <div class="col-md-4" style="margin-top: 4%;">
+                <div class="card">
+                    <img src="img/galletas-curcuma.jpg" class="card-img-top" alt="galleta_avena">
+                    <div class="card-body ofertas text-center">
+                        <h5 class="product-title">Galletas Doradas de Cúrcuma</h5>
+                        <p class="card-text">S/ 22.00 - S/ 41.00</p>
+                       
+                        <a href="#" class="btn btn-products">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Product Card 6-->
+             <div class="col-md-4" style="margin-top: 4%;">
+                <div class="card">
+                    <img src="img/galleta_ojuela-2.jpg" class="card-img-top" alt="galleta_avena">
+                    <div class="card-body ofertas text-center">
+                        <h5 class="product-title">Avena Crunchy Cookies</h5>
+                        <p class="card-text">S/ 19.00 - S/ 35.00</p>
                        
                         <a href="#" class="btn btn-products">Ver Detalles</a>
                     </div>
@@ -193,7 +237,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
+        <script src="js/javaScrip.js"></script>
     </body>
 
 </html>
